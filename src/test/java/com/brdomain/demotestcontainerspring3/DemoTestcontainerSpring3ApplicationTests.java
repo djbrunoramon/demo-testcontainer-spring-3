@@ -36,6 +36,7 @@ class DemoTestcontainerSpring3ApplicationTests {
     @Test
     void contextLoads() {
         System.out.println("Hello");
+        assertThat(container.isRunning()).isTrue();
     }
 
     @Test
